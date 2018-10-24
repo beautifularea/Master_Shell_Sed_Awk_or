@@ -1,0 +1,65 @@
+
+ cat list.csv | awk 'NR>1' | awk -F, '{ print $3; }'
+
+
+ sshpass -p password ssh root@ip -o "StrictHostKeyChecking no" "ls"
+
+
+./skywelld validation_create
+
+
+2. 多行注释：
+
+法一：
+
+: << !
+
+语句1
+
+语句2
+
+语句3
+
+语句4
+
+!
+
+
+while read myline
+do
+ echo "LINE:"$myline
+done < datafile.txt
+
+
+
+echo ${FILE}
+echo "FileName : "${FILE%.*}
+echo "FileExte : "${FILE##*.}
+
+exten=${FILE##*.}
+if [ ${exten} == 'pem' | ${exten} == 'crt' ] then
+
+fi
+
+
+
+-----------
+echo ${string: -4}    //2341  ：右边有空格   截取后4位
+
+上传crt/pem
+./readip.sh files/certificate_ips.txt
+
+
+字符串拼接
+tab1=${a}${b}${c}
+
+
+$SSHPASS -p "$1" ssh -o StrictHostKeyChecking=no root@$2 "$3" </dev/null
+http://bbs.chinaunix.net/thread-4244945-1-1.html
+
+
+
+while mapfile -t -n 10 ary && ((${#ary[@]})); do
+ printf '%s\n' "${ary[@]}"
+ printf -- '--- SNIP ---\n'
+done < file
